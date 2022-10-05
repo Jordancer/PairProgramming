@@ -1,16 +1,26 @@
-function sort(numbers) {
-  var prime = [];
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 0) {
-      even.push(numbers[i]);
-    } else {
-      odd.push(numbers[i]);
+function isItPrime(num) {
+  if (num <= 1) {
+    return false;
+  } else {
+    for (let i = 2; i < num; i++) {
+      if (num % i == 0) {
+        return false;
+      }
     }
+    return true;
   }
-  const returnObject = {
-    odd,
-    even,
-  };
-  return returnObject;
 }
-console.log(sort([2, 4, 7, 11, 15, 16]));
+
+// const isPrime = isItPrime(2);
+// // console.log(isPrime);
+
+let array = [10, 18, 19, 29, 33, 35, 47, 66, 83];
+let prime = [];
+array.forEach(function (element) {
+  const isPrime = isItPrime(element);
+  if (isPrime) {
+    prime.push(element);
+  } else {
+  }
+});
+console.log(prime);

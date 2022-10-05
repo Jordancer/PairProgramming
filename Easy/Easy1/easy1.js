@@ -14,6 +14,6 @@ function sort(numbers) {
   };
   return returnObject;
 }
-console.log(sort([2, 4, 7, 11, 15, 16]));
+console.log(sort([1, 2, 3, 4, 5, 6]));
 
 //-----------------------------------------

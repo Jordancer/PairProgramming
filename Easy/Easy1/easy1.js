@@ -12,7 +12,7 @@ function sort(numbers) {
     odd,
     even,
   };
-  return returnObject;
+  return rturnObject;
 }
 console.log(sort([1, 2, 3, 4, 5, 6]));
 
